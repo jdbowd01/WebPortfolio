@@ -1,0 +1,32 @@
+[
+  {
+    "title": "About",
+    "image": "./lowpoly1.png",
+    "color": "red"
+  },
+  {
+    "title": "Experience",
+    "image": "./lowpoly2.png",
+    "color": "orange"
+  },
+  {
+    "title": "Projects",
+    "image": "./lowpoly3.png",
+    "color": "yellow"
+  },
+  {
+    "title": "Skills",
+    "image": "./lowpoly4.png",
+    "color": "green"
+  },
+  {
+    "title": "Contact",
+    "image": "./lowpoly5.png",
+    "color": "blue"
+  },
+  {
+    "title": "Resume",
+    "image": "./lowpoly6.png",
+    "color": "purple"
+  }
+]

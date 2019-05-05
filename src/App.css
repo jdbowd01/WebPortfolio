@@ -1,0 +1,285 @@
+body {
+  font-family: "Raleway";
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  width: 100%;
+  border: 0.5px solid #777;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c9c9;
+}
+
+.content-small-section, .content-large-section {
+  background-color: #ccc;
+  border: 0.5px solid #777;
+  border-radius: 6px;
+}
+
+#skills, #resume, #projects, #experience, #contact, #about {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.hvr-underline-from-left-purple, .hvr-underline-from-left-blue, .hvr-underline-from-left-green, .hvr-underline-from-left-yellow, .hvr-underline-from-left-orange, .hvr-underline-from-left-red {
+  display: flex;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left-purple ::before, .hvr-underline-from-left-blue ::before, .hvr-underline-from-left-green ::before, .hvr-underline-from-left-yellow ::before, .hvr-underline-from-left-orange ::before, .hvr-underline-from-left-red ::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left-purple :hover::before, .hvr-underline-from-left-purple :focus::before, .hvr-underline-from-left-purple :active::before, .hvr-underline-from-left-blue :hover::before, .hvr-underline-from-left-blue :focus::before, .hvr-underline-from-left-blue :active::before, .hvr-underline-from-left-green :hover::before, .hvr-underline-from-left-green :focus::before, .hvr-underline-from-left-green :active::before, .hvr-underline-from-left-yellow :hover::before, .hvr-underline-from-left-yellow :focus::before, .hvr-underline-from-left-yellow :active::before, .hvr-underline-from-left-orange :hover::before, .hvr-underline-from-left-orange :focus::before, .hvr-underline-from-left-orange :active::before, .hvr-underline-from-left-red :hover::before, .hvr-underline-from-left-red :focus::before, .hvr-underline-from-left-red :active::before {
+  right: 0;
+}
+
+.contact-row {
+  width: auto;
+  margin: 10px auto;
+}
+.contact-row i {
+  font-size: 100px;
+  margin-right: 30px;
+}
+.contact-row a, .contact-row h2 {
+  margin: auto 0;
+}
+
+.content-large-section {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.content-small-section {
+  width: 23%;
+  min-width: 23%;
+  height: fit-content;
+  padding: 6px;
+  margin: 0 40px;
+}
+
+.experience-header {
+  width: auto;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.hvr-underline-from-left-red ::before {
+  background: #f00;
+}
+.hvr-underline-from-left-orange ::before {
+  background: #ff7100;
+}
+.hvr-underline-from-left-yellow ::before {
+  background: #ffe000;
+}
+.hvr-underline-from-left-green ::before {
+  background: #07ff00;
+}
+.hvr-underline-from-left-blue ::before {
+  background: #0041ff;
+}
+.hvr-underline-from-left-purple ::before {
+  background: #b100ff;
+}
+.info-title {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: column;
+  height: 70px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.info-title p {
+  font-size: 40px;
+  text-align: right;
+  margin: auto 10px;
+}
+
+.nav-tab {
+  flex: 1;
+  font-size: 2vw;
+  cursor: pointer;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-tab p {
+  margin: 0 10px 0 auto;
+}
+
+.project-entry {
+  flex: 1;
+}
+
+.project-img, .project-video {
+  width: 80%;
+  border: 1px solid #777;
+  box-shadow: 0 0 3px 0 #444;
+  margin: 0 auto;
+}
+
+.project-row {
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+  justify-content: space-around;
+}
+
+.skill-img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.skill-row {
+  width: 90%;
+  padding-bottom: 6px;
+  margin: 20px auto;
+  overflow-x: scroll;
+}
+
+.skill-text {
+  margin: 10px 0;
+}
+
+.small-img {
+  width: 30px;
+  height: 30px;
+  margin: auto 10px auto 0px;
+}
+
+.standard-margin {
+  width: 95%;
+  margin: 10px auto;
+}
+
+.text-center {
+  text-align: center;
+  padding: 0px 10px;
+}
+
+#about {
+  background-image: url("graph-1.png");
+}
+
+#contact {
+  background-image: url("graph-5.png");
+}
+
+#experience {
+  background-image: url("graph-2.png");
+}
+
+#info {
+  width: 86%;
+  margin-left: auto;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14%;
+  height: 100%;
+  background-color: #ccc;
+  border-right: 1px solid #777;
+  box-shadow: 0 0 5px 0 #111;
+  align-content: space-around;
+}
+
+#nav-desc {
+  flex: 1;
+  font-size: 1vw;
+  text-align: right;
+  margin: 0;
+}
+
+#nav-name {
+  flex: 0 0 auto;
+  margin: 15px;
+  user-select: none;
+}
+
+#nav-title {
+  flex: 2;
+  font-size: 3vw;
+  text-align: right;
+  margin: 0;
+}
+
+#projects {
+  background-image: url("graph-3.png");
+}
+
+#resume {
+  background-image: url("graph-6.png");
+}
+
+#skills {
+  background-image: url("graph-4.png");
+}
+
+@media all and (max-width: 850px) {
+  #nav-bar {
+    display: none;
+  }
+
+  #info {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
